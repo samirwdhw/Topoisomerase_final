@@ -1,0 +1,9 @@
+Base Pairs: 10,000
+Enzymes: 10
+Catenations: 1000
+Time step: 0.01 sec
+Expression: 2.937*(exp(-0.505*f_each)+0.2754)*((float)ATP_conc/(ATP_conc + Km))
+Km: 270
+Angie's Parameter: 0.241
+Averaging Runs: 20
+
