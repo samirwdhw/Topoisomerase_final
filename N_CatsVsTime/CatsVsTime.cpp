@@ -21,7 +21,7 @@ using namespace std;
 
 #define N 10000	//SSize of latice
 #define MAX_ENZYMES 10		//No. Of enzymes around the latice
-//#define FORCE 100.0	//Force applied at kinetochore (pN)
+#define FORCE 100.0	//Force applied at kinetochore (pN)
 #define V_MAX	3.38  //Max number of cycles per second at a given force (s)
 #define Km	270 //Michaelis Constant for the enzyme (uM)
 #define Kb	1.38	//Boltzmann Constant (10^-23 units)
@@ -29,19 +29,19 @@ using namespace std;
 #define E_PRODUCT	Kb*T //To increase speed
 #define TIME_STEP 0.01		//Time step
 #define DELTA 0.241	//angie's parameter (pN), 0.835 is parameter of motion
-#define T_MAX 200000		//Seconds
-#define FILE_NAME "time_force_ATP2000.dat"		//To see where to output data
+#define T_MAX 3000		//Seconds
+#define FILE_NAME "ncats_time_ATP2000_force_100.dat"		//To see where to output data
 #define MAX_CATS 1000		//Number of catenations to insert initially
 #define ATP_MAX 2000	//Maximum ATP till which readings are taken
 #define N_RUNS 100		//Number of runs for averaging
 #define P_FIND 0.02	//Probabilty of landing on a catenation
-#define FORCE_MAX 200 //Maximum force in the system
+//#define FORCE_MAX 200 //Maximum force in the system
 
 int n_cats = N;	//No. of catenations in the latice
 
 int track[N];
 
-float FORCE;
+//float FORCE;
 
 float prob;	//Probabability of resolving a catenation
 float f_each; 	//Force experienced by each catenation
@@ -219,34 +219,28 @@ int main(){
 
 	//print(track, N);
 
-	f1<<0<<" "<<0<<endl;
-
 	//cout<<"here1";
 
-	for(FORCE = 0 ; FORCE <= FORCE_MAX ; FORCE += FORCE_MAX/100){	//Never start from 0
+	//Never start from 0
 
 		//cout<<ATP_conc;
 
-		float avg_time = 0;
+		float avg_time[(int)(T_MAX/TIME_STEP) + 1] = {0};
+
+		//cout<<(int)(T_MAX/TIME_STEP)<<endl;
 
 		for(int runs = 0; runs< N_RUNS; runs++){
 
-			//cout<<"Runs"<<" "<<runs<<endl;
-
-			float time1; //To see the time elapsed
+			int time1; //To see the time elapsed
 
 			initialize(track, N);	//To make all entries 0
 
 			fill_cat();	//To insert catenations
 
-			for(time1 = TIME_STEP; ;time1 += TIME_STEP){
 
-/*
-				if(runs == 0){
+			for(time1 = 0; time1<= T_MAX/TIME_STEP + 1; time1++){
 
-					cout<<"Time: "<<time1<<" Cats: "<<n_cats<<endl;
-				}
-*/
+				avg_time[time1] += n_cats;
 
 				if(n_cats == 0){
 					break;
@@ -254,18 +248,30 @@ int main(){
 
 				work(time1);
 
+/*				if(runs == 0){
+					cout<<time1<<" "<<n_cats<<endl;
+				}
+*/
+
 			}
 
-			avg_time += time1;
+
+			//cout<<runs<<endl;
+			//cout<<"ATP conc: "<<ATP_conc<<"Force: "<<f_each<<"Cats: "<<n_cats<<"Runs: "<<runs<<" "<<"%"<<endl;
 
 		}
 
-		avg_time /= N_RUNS;
+		for(int i = 0; i<= (int)(T_MAX/TIME_STEP) + 1; i++){
 
-		f1<<FORCE<<" "<<avg_time<<endl;
-		cout<<"ATP: "<<ATP_conc<<" Time: "<<avg_time<<" Force: "<<FORCE<<endl;
+			avg_time[i] /= N_RUNS;
 
-	}	
+			f1<<i*TIME_STEP<<" "<<avg_time[i]<<endl;
+
+		}
+
+//		f1<<ATP_conc<<" "<<(float)(MAX_CATS-n_cats)/time1<<endl;
+//		cout<<"ATP: "<<ATP_conc<<" "<<"Cycles per sec: "<<(float)(MAX_CATS-n_cats)/time1<<endl;
+		//cout<<"here";	
 
 
 	f1.close();
