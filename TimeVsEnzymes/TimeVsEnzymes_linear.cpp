@@ -20,7 +20,7 @@
 using namespace std;
 
 #define N 10000	//SSize of latice
-#define MAX_ENZYMES 10		//No. Of enzymes around the latice
+//#define MAX_ENZYMES 10		//No. Of enzymes around the latice
 #define FORCE 100.0	//Force applied at kinetochore (pN)
 #define V_MAX	3.38  //Max number of cycles per second at a given force (s)
 #define Km	270 //Michaelis Constant for the enzyme (uM)
@@ -32,9 +32,11 @@ using namespace std;
 #define T_MAX 200000		//Seconds
 #define FILE_NAME "timeVsATP_linear.dat"		//To see where to output data
 #define MAX_CATS 1000		//Number of catenations to insert initially
-#define ATP_MAX 5000	//Maximum ATP till which readings are taken
+#define ATP_MAX 2000	//Maximum ATP till which readings are taken
 #define N_RUNS 20		//Number of runs for averaging
 #define P_FIND 0.02	//Probabilty of landing on a catenation
+#define ENZYMES_MAX 100 //Maximum number of enzymes in the system
+
 
 int n_cats = N;	//No. of catenations in the latice
 
@@ -44,7 +46,7 @@ double prob;	//Probabability of resolving a catenation
 double f_each; 	//Force experienced by each catenation
 float ATP_conc = ATP_MAX;		//Concentration of ATP
 
-
+float MAX_ENZYMES;
 
 struct Cats_list{
 

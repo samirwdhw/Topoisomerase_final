@@ -7,8 +7,10 @@
 //and if it does whether it can be removed or not
 
 //This is to see the relation of time taken to solve all catenations
-//vs the ATP concentration in the system in a 
+//vs the Force applied at the kinetochore in a 
 //chromosome like scenario
+
+//With a linearly decreasing Force Profile along the chromosome
 
 #include<iostream>
 #include<stdlib.h>
@@ -19,7 +21,7 @@ using namespace std;
 
 #define N 10000	//SSize of latice
 #define MAX_ENZYMES 10		//No. Of enzymes around the latice
-#define FORCE 100.0	//Force applied at kinetochore (pN)
+#define FORCE_MAX 200.0	//Max. Force applied at kinetochore (pN)
 #define V_MAX	3.38  //Max number of cycles per second at a given force (s)
 #define Km	270 //Michaelis Constant for the enzyme (uM)
 #define Kb	1.38	//Boltzmann Constant (10^-23 units)
@@ -28,9 +30,9 @@ using namespace std;
 #define TIME_STEP 0.01		//Time step
 #define DELTA 0.241	//angie's parameter (pN), 0.835 is parameter of motion
 #define T_MAX 200000		//Seconds
-#define FILE_NAME "timeVsATP_const.dat"		//To see where to output data
+#define FILE_NAME "timeVsForce_linear.dat"		//To see where to output data
 #define MAX_CATS 1000		//Number of catenations to insert initially
-#define ATP_MAX 5000	//Maximum ATP till which readings are taken
+#define ATP_MAX 2000	//Maximum ATP till which readings are taken
 #define N_RUNS 100		//Number of runs for averaging
 #define P_FIND 0.02	//Probabilty of landing on a catenation
 
@@ -38,9 +40,10 @@ int n_cats = N;	//No. of catenations in the latice
 
 int track[N];
 
-float prob;	//Probabability of resolving a catenation
-float f_each; 	//Force experienced by each catenation
+double prob;	//Probabability of resolving a catenation
+double f_each; 	//Force experienced by each catenation
 float ATP_conc = ATP_MAX;		//Concentration of ATP
+float FORCE;
 
 
 struct Cats_list{
@@ -48,22 +51,50 @@ struct Cats_list{
 
 	int a[MAX_CATS];
 	int q;
+	int cats_left;		//Required for the linear force profile
+	int cats_right;		//Required for the linear force profile
+	long int left_sum;
+	long int right_sum;
+
 
 	Cats_list(){
 
 		q = 0;
+		cats_left = 0;
+		cats_right = 0;
+		left_sum = 0;
+		right_sum = 0;
 
 	}
 
 	void initialize(){
 
 		q = 0;
+		cats_left = 0;
+		cats_right = 0;
+		left_sum = 0;
+		right_sum = 0;
 
 	}
 
 	void insert(int pos){
 
 		a[q] = pos;
+
+		if(pos <= N/2){
+			
+			cats_left++;
+			left_sum += pos;
+		
+		}
+		
+		else{
+			
+			cats_right++;
+			right_sum += pos;
+		
+		}
+
 		q++;
 
 	}
@@ -71,6 +102,18 @@ struct Cats_list{
 	void remove(int pos){
 
 		int i;
+
+		if( pos <= N/2){
+			
+			cats_left--;
+			left_sum -= pos;
+
+		}
+		else{
+
+			cats_right--;
+			right_sum -= pos;
+		}
 
 		for(i = 0; i<q; i++){
 
@@ -97,9 +140,30 @@ struct Cats_list{
 
 	int givePos(){
 
+		if(q ==0 ){
+
+			cout<<"Here"<<endl;
+
+		}
+
 		int list_place = rand()%q;
 
 		return a[list_place];
+
+	}
+
+	void print(){
+
+		for(int i = 0; i<q; i++){
+			cout<<a[i]<<" ";
+		}
+		cout<<endl;
+
+		cout<<"Left: "<<cats_left<<endl;
+		cout<<"Right: "<<cats_right<<endl;
+
+		cout<<"Left Sum: "<<left_sum<<endl;
+		cout<<"Right Sum: "<<right_sum<<endl;
 
 	}
 
@@ -107,9 +171,19 @@ struct Cats_list{
 
 Cats_list list;		//To maintain the positions of catenations
 
-void calcProb(){	//To update the probability
+void calcProb(int pos){	//To update the probability
 
-	f_each = FORCE/n_cats;
+	if( pos <= N/2){
+
+		f_each = FORCE*list.cats_left*pos/(n_cats*list.left_sum);
+
+	}
+
+	else{
+			
+		f_each = FORCE*list.cats_right*(N - pos)/(n_cats*(N*list.cats_right - list.right_sum));
+	}
+	
 
 	float v = 2.937*(exp(-0.505*f_each)+0.2754)*((float)ATP_conc/(ATP_conc + Km));		//Adjust 100 if order changes
 
@@ -133,6 +207,8 @@ void fill_cat(){	//To add randomly placed catenations
 
 			track[pos] = 1;
 			list.insert(pos);
+
+			//cout<<"here2"<<endl;
 		}
 
 	}	
@@ -165,11 +241,14 @@ void work(float time1){	//To simulate a single time step
 
 	for(int i = 0; i< MAX_ENZYMES; i++){
 
-		calcProb();	//To calculate the probability now
-
 		if(n_cats == 0){
 			break;
 		}
+
+		int pos = list.givePos();
+
+		calcProb(pos);	//To calculate the probability now
+	
 
 		//cout<<prob<<endl;
 
@@ -178,8 +257,6 @@ void work(float time1){	//To simulate a single time step
 		if(prob_find < P_FIND){
 			
 			if( rand1() <prob){
-
-				int pos = list.givePos();
 
 				list.remove(pos);
 
@@ -206,6 +283,7 @@ void print(int a[], int n){		//To display an array
 }
 
 
+
 int main(){
 
 	ofstream f1;	//To output data
@@ -218,7 +296,7 @@ int main(){
 
 	//cout<<"here1";
 
-	for(ATP_conc = ATP_MAX/100 ; ATP_conc <= ATP_MAX ; ATP_conc += ATP_MAX/100){	//Never start from 0
+	for(FORCE = 0 ; FORCE <= FORCE_MAX ; FORCE += FORCE_MAX/100){	//Never start from 0
 
 		//cout<<ATP_conc;
 
@@ -257,8 +335,8 @@ int main(){
 
 		avg_time /= N_RUNS;
 
-		f1<<ATP_conc<<" "<<avg_time<<endl;
-		cout<<"ATP: "<<ATP_conc<<"Time: "<<avg_time<<"Force: "<<FORCE<<endl;
+		f1<<FORCE<<" "<<avg_time<<endl;
+		cout<<"ATP: "<<ATP_conc<<" Time: "<<avg_time<<" Force: "<<FORCE<<endl;
 
 	}	
 

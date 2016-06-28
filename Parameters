@@ -6,4 +6,4 @@ Expression: 2.937*(exp(-0.505*f_each)+0.2754)*((float)ATP_conc/(ATP_conc + Km))
 Km: 270
 Angie's Parameter: 0.241
 Averaging Runs: 20
-
+ATP(unless that is varied): 2000

@@ -33,7 +33,7 @@ using namespace std;
 #define FILE_NAME "timeVsATP_linear.dat"		//To see where to output data
 #define MAX_CATS 1000		//Number of catenations to insert initially
 #define ATP_MAX 5000	//Maximum ATP till which readings are taken
-#define N_RUNS 20		//Number of runs for averaging
+#define N_RUNS 100		//Number of runs for averaging
 #define P_FIND 0.02	//Probabilty of landing on a catenation
 
 int n_cats = N;	//No. of catenations in the latice
