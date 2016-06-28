@@ -20,7 +20,6 @@
 using namespace std;
 
 #define N 10000	//SSize of latice
-//#define MAX_ENZYMES 10		//No. Of enzymes around the latice
 #define FORCE 100.0	//Force applied at kinetochore (pN)
 #define V_MAX	3.38  //Max number of cycles per second at a given force (s)
 #define Km	270 //Michaelis Constant for the enzyme (uM)
