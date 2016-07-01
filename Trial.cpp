@@ -71,14 +71,14 @@ struct Cats_list{
 		if(pos <= N/2){
 			
 			cats_left++;
-			left_sum += exp((float)pos/NORMAL);
+			left_sum += ((float)pos/NORMAL);
 		
 		}
 		
 		else{
 			
 			cats_right++;
-			right_sum += exp((float)(N-pos)/NORMAL);
+			right_sum += ((float)(N-pos)/NORMAL);
 		
 		}
 
@@ -93,13 +93,13 @@ struct Cats_list{
 		if( pos <= N/2){
 			
 			cats_left--;
-			left_sum -= exp((float)pos/NORMAL);
+			left_sum -= ((float)pos/NORMAL);
 
 		}
 		else{
 
 			cats_right--;
-			right_sum -= exp((float)(N-pos)/NORMAL);
+			right_sum -= ((float)(N-pos)/NORMAL);
 		}
 
 		for(i = 0; i<q; i++){
@@ -159,17 +159,97 @@ struct Cats_list{
 Cats_list list;
 
 
+void fill_cat(){	//To add randomly placed catenations
+
+	int common_fill = 3*MAX_CATS/4;	//The ratio that is distributed across the bp randomly
+	int special_fill = MAX_CATS/4;	//The extra given to specific locations
+
+	if(special_fill + common_fill/3 > N/3){
+
+		special_fill = N/2 - MAX_CATS/2;
+		common_fill = 3*MAX_CATS/2 - N/2;
+	}
+
+	for(int i = 0; i< common_fill; i++){
+		
+		int pos = rand()%N;
+
+		if(track[pos] == 1){
+
+			i--;
+			continue;
+		}
+		
+		else{
+
+			track[pos] = 1;
+			list.insert(pos);
+		}
+
+	}	
+
+	for(int i = 0; i< special_fill/2; i++){
+
+
+		int pos = rand()%(N/6) + N/6;
+
+		if(track[pos] == 1){
+
+			i--;
+			continue;
+
+		}
+
+		else{
+
+
+			track[pos] = 1;
+			list.insert(pos);
+		}
+
+
+	}
+
+
+	for(int i = 0; i< special_fill/2; i++){
+
+
+		int pos = rand()%(N/6) + 2*N/3;
+
+		if(track[pos] == 1){
+
+			i--;
+			continue;
+
+		}
+
+		else{
+
+
+			track[pos] = 1;
+			list.insert(pos);
+		}
+
+
+	}
+
+
+	n_cats = list.q;
+
+}
+
+
 void calcProb(int pos){	//To update the probability
 
 	if( pos <= N/2){
 
-		f_each = FORCE*list.cats_left*exp(pos/NORMAL)/(n_cats*list.left_sum);
+		f_each = FORCE*list.cats_left*(pos/NORMAL)/(n_cats*list.left_sum);
 
 	}
 
 	else{
 			
-		f_each = FORCE*list.cats_right*exp((N-pos)/NORMAL)/(n_cats*(list.right_sum));
+		f_each = FORCE*list.cats_right*((N-pos)/NORMAL)/(n_cats*(list.right_sum));
 	}
 	
 
@@ -185,21 +265,21 @@ int main(){
 
 	n_cats = MAX_CATS;
 
-	for(int i = 0; i<MAX_CATS; i++){
-
-		list.insert(i*10);
-
-	}
-
 	//list.print();
+
+	fill_cat();
 
 	for(int i = 0; i<N; i++){
 
 		calcProb(i);
 
-		f1<<i<<" "<<f_each<<endl;
+		//f1<<i<<" "<<f_each<<endl;
+
+		f1<<i<<" "<<track[i]<<endl;
 
 	}
+
+
 
 	f1.close();
 
