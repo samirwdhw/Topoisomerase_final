@@ -30,7 +30,7 @@ using namespace std;
 #define TIME_STEP 0.01		//Time step
 #define DELTA 0.241	//angie's parameter (pN), 0.835 is parameter of motion
 #define T_MAX 200000		//Seconds
-#define FILE_NAME "timeVsATP_expo.dat"		//To see where to output data
+#define FILE_NAME "timeVsATP_expo_10.dat"		//To see where to output data
 #define MAX_CATS 1000		//Number of catenations to insert initially
 #define ATP_MAX 5000	//Maximum ATP till which readings are taken
 #define N_RUNS 100		//Number of runs for averaging

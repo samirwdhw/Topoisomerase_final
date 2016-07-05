@@ -193,7 +193,16 @@ void calcProb(int pos){	//To update the probability
 
 void fill_cat(){	//To add randomly placed catenations
 
-	for(int i = 0; i< MAX_CATS; i++){
+	int common_fill = 3*MAX_CATS/4;	//The ratio that is distributed across the bp randomly
+	int special_fill = MAX_CATS/4;	//The extra given to specific locations
+
+	if(special_fill + common_fill/3 > N/3){
+
+		special_fill = N/2 - MAX_CATS/2;
+		common_fill = 3*MAX_CATS/2 - N/2;
+	}
+
+	for(int i = 0; i< common_fill; i++){
 		
 		int pos = rand()%N;
 
@@ -207,13 +216,57 @@ void fill_cat(){	//To add randomly placed catenations
 
 			track[pos] = 1;
 			list.insert(pos);
-
-			//cout<<"here2"<<endl;
 		}
 
 	}	
 
-	n_cats = MAX_CATS;
+	for(int i = 0; i< special_fill/2; i++){
+
+
+		int pos = rand()%(N/6) + N/6;
+
+		if(track[pos] == 1){
+
+			i--;
+			continue;
+
+		}
+
+		else{
+
+
+			track[pos] = 1;
+			list.insert(pos);
+		}
+
+
+	}
+
+
+	for(int i = 0; i< special_fill/2; i++){
+
+
+		int pos = rand()%(N/6) + 2*N/3;
+
+		if(track[pos] == 1){
+
+			i--;
+			continue;
+
+		}
+
+		else{
+
+
+			track[pos] = 1;
+			list.insert(pos);
+		}
+
+
+	}
+
+
+	n_cats = list.q;
 
 }
 

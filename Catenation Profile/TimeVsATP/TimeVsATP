@@ -90,7 +90,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Jun 28 18:55:36 2016"
+@timestamp def "Sat Jul  2 13:50:39 2016"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -137,7 +137,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 0, 0, 5000, 12000
+@    world 0, 0, 5000, 20000
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
@@ -219,7 +219,7 @@
 @    yaxis  label color 1
 @    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 2000
+@    yaxis  tick major 5000
 @    yaxis  tick minor ticks 1
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -259,7 +259,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.75, 0.8
+@    legend 0.55, 0.8
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
@@ -426,7 +426,154 @@
 @    s2 errorbar riser clip off
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "/home/samir/Documents/Projects/Topo_paper/TimeVsATP/timeVsATP_expo.dat"
-@    s2 legend  ""
+@    s2 legend  "Exponential"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 1.0
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 4
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsATP/timeVsATP_const.dat"
+@    s3 legend  "Const (Different Catenation Profile)"
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 5
+@    s4 symbol pattern 1
+@    s4 symbol fill color 5
+@    s4 symbol fill pattern 0
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 0
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 1.0
+@    s4 line color 5
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 1
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 0
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 5
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsATP/timeVsATP_expo.dat"
+@    s4 legend  "Linear (Different Catenation Profile)"
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 6
+@    s5 symbol pattern 1
+@    s5 symbol fill color 6
+@    s5 symbol fill pattern 0
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 0
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 1.0
+@    s5 line color 6
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 1
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 0
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 6
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsATP/timeVsATP_linear.dat"
+@    s5 legend  "Exponential (Different Catenation Profile)"
 @target G0.S0
 @type xy
 50 10483.2
@@ -735,4 +882,313 @@
 4900 1677.73
 4950 1674.74
 5000 1669.39
+&
+@target G0.S3
+@type xy
+50 10483.2
+100 6095.98
+150 4634.63
+200 3901.75
+250 3450.42
+300 3140.12
+350 2950.13
+400 2791.19
+450 2650.1
+500 2541.79
+550 2466.97
+600 2401.16
+650 2358.09
+700 2314.02
+750 2257.64
+800 2219.86
+850 2165.94
+900 2158.34
+950 2120.34
+1000 2101.47
+1050 2083.67
+1100 2069.65
+1150 2048.57
+1200 2026.56
+1250 2023.17
+1300 1992.46
+1350 1981.29
+1400 1989.84
+1450 1964.24
+1500 1965.36
+1550 1953.03
+1600 1930.49
+1650 1922.97
+1700 1918.19
+1750 1916.41
+1800 1898.33
+1850 1907.5
+1900 1893.62
+1950 1888.69
+2000 1887.64
+2050 1884.57
+2100 1866.95
+2150 1859.55
+2200 1866.44
+2250 1858.63
+2300 1854.33
+2350 1853.97
+2400 1843.37
+2450 1863.72
+2500 1840.51
+2550 1836.35
+2600 1829.49
+2650 1844
+2700 1823.6
+2750 1806.47
+2800 1820.08
+2850 1820.81
+2900 1803.94
+2950 1805.62
+3000 1803.11
+3050 1794.69
+3100 1799.46
+3150 1802.95
+3200 1800.41
+3250 1798.36
+3300 1800.03
+3350 1795.16
+3400 1787.62
+3450 1780.79
+3500 1777.04
+3550 1778.59
+3600 1781.84
+3650 1784.31
+3700 1793.12
+3750 1780.97
+3800 1770.8
+3850 1779.04
+3900 1772.17
+3950 1776.31
+4000 1777.18
+4050 1769.37
+4100 1775.48
+4150 1769.77
+4200 1752.37
+4250 1761.55
+4300 1763.86
+4350 1767.62
+4400 1753.23
+4450 1769.25
+4500 1759.76
+4550 1761.81
+4600 1761.82
+4650 1752.57
+4700 1760.16
+4750 1750.35
+4800 1750.75
+4850 1746.08
+4900 1761.01
+4950 1741.65
+5000 1749.27
+&
+@target G0.S4
+@type xy
+50 10093.7
+100 5833.82
+150 4472.3
+200 3731.77
+250 3299.83
+300 2990.72
+350 2790.25
+400 2653.86
+450 2529.74
+500 2441.4
+550 2359.09
+600 2299.6
+650 2237.59
+700 2193.06
+750 2143.77
+800 2111.53
+850 2085.88
+900 2067.73
+950 2043.12
+1000 2002.22
+1050 1998.06
+1100 1973.87
+1150 1954.34
+1200 1928.15
+1250 1912.41
+1300 1913.77
+1350 1901.73
+1400 1879.62
+1450 1871.12
+1500 1859.14
+1550 1860.3
+1600 1867.13
+1650 1837.74
+1700 1844.06
+1750 1829.79
+1800 1812.22
+1850 1815.77
+1900 1802.64
+1950 1800.77
+2000 1811.5
+2050 1794.69
+2100 1786.04
+2150 1781.26
+2200 1779.4
+2250 1767.47
+2300 1767.21
+2350 1766.42
+2400 1767.98
+2450 1750.34
+2500 1756.73
+2550 1755.11
+2600 1747.7
+2650 1749.41
+2700 1740.39
+2750 1746.16
+2800 1734.77
+2850 1741.78
+2900 1720.52
+2950 1737.2
+3000 1715.42
+3050 1724.37
+3100 1721.97
+3150 1720.85
+3200 1716.06
+3250 1719.24
+3300 1717.19
+3350 1709.02
+3400 1712.65
+3450 1707.73
+3500 1710.46
+3550 1704.75
+3600 1705.86
+3650 1695.39
+3700 1695.48
+3750 1702.72
+3800 1691.36
+3850 1691.87
+3900 1692.14
+3950 1702.51
+4000 1694.52
+4050 1687.38
+4100 1683.55
+4150 1685.03
+4200 1682.6
+4250 1684.81
+4300 1682.98
+4350 1681.43
+4400 1688.75
+4450 1681.54
+4500 1690.8
+4550 1672.25
+4600 1678.44
+4650 1668.33
+4700 1666.21
+4750 1674.51
+4800 1667.47
+4850 1679.22
+4900 1673.65
+4950 1675.6
+5000 1668.47
+&
+@target G0.S5
+@type xy
+50 10415.9
+100 6033.6
+150 4616.8
+200 3858.39
+250 3404.78
+300 3106.82
+350 2902.27
+400 2740.43
+450 2623.86
+500 2528.38
+550 2453.81
+600 2367.22
+650 2315.89
+700 2256.63
+750 2223.38
+800 2186.47
+850 2165.35
+900 2142.26
+950 2103.52
+1000 2090.59
+1050 2058.26
+1100 2036
+1150 2013.97
+1200 1995.51
+1250 1996.56
+1300 1971.45
+1350 1969.63
+1400 1944.99
+1450 1946.77
+1500 1940.69
+1550 1919.36
+1600 1928.76
+1650 1908.04
+1700 1902.23
+1750 1886.97
+1800 1887.62
+1850 1880.07
+1900 1887.03
+1950 1866.41
+2000 1859.06
+2050 1838.66
+2100 1853.33
+2150 1844.01
+2200 1834.99
+2250 1826.87
+2300 1838.92
+2350 1822.52
+2400 1830.53
+2450 1813.55
+2500 1813.31
+2550 1818.71
+2600 1809.75
+2650 1806.85
+2700 1808.82
+2750 1806.62
+2800 1802.57
+2850 1790.85
+2900 1786.61
+2950 1787.46
+3000 1788.52
+3050 1787.58
+3100 1786.55
+3150 1779.76
+3200 1776.59
+3250 1773.02
+3300 1775.82
+3350 1780.41
+3400 1769.81
+3450 1775.1
+3500 1762.46
+3550 1760.6
+3600 1769.92
+3650 1760.15
+3700 1754.22
+3750 1759.73
+3800 1759.09
+3850 1743.15
+3900 1759.95
+3950 1749.82
+4000 1746.31
+4050 1749
+4100 1746.21
+4150 1746.38
+4200 1739.55
+4250 1736.27
+4300 1751.35
+4350 1741.54
+4400 1735.83
+4450 1736.85
+4500 1726.21
+4550 1730.87
+4600 1734.83
+4650 1744.85
+4700 1739.32
+4750 1738.05
+4800 1730.69
+4850 1724.67
+4900 1722.07
+4950 1729.89
+5000 1714.33
 &

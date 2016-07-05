@@ -90,7 +90,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Jun 28 18:54:00 2016"
+@timestamp def "Sat Jul  2 14:09:25 2016"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -137,7 +137,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 0, 20, 100, 20000
+@    world 0, 100, 100, 100000
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
@@ -427,6 +427,153 @@
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "/home/samir/Documents/Projects/Topo_paper/TimeVsEnzymes/timeVsEnzymes_expo.dat"
 @    s2 legend  "Exponential"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 1.0
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 4
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsEnzymes/time_enzymes_ATP2000_Force100.dat"
+@    s3 legend  "Const (Profile 2)"
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 5
+@    s4 symbol pattern 1
+@    s4 symbol fill color 5
+@    s4 symbol fill pattern 0
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 0
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 1.0
+@    s4 line color 5
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 1
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 0
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 5
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsEnzymes/timeVsATP_linear.dat"
+@    s4 legend  "Linear (Profile 2)"
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 6
+@    s5 symbol pattern 1
+@    s5 symbol fill color 6
+@    s5 symbol fill pattern 0
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 0
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 1.0
+@    s5 line color 6
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 1
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 0
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 6
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsEnzymes/timeVsEnzymes_expo.dat"
+@    s5 legend  "Expo (Profile 2)"
 @target G0.S0
 @type xy
 1 17102.7
@@ -735,4 +882,313 @@
 98 184.112
 99 181.599
 100 180.747
+&
+@target G0.S3
+@type xy
+1 18517
+2 9256.36
+3 6209.64
+4 4717.03
+5 3772.07
+6 3138.06
+7 2684.65
+8 2344.65
+9 2091.16
+10 1887.88
+11 1708.41
+12 1576.87
+13 1452.23
+14 1347.09
+15 1257.13
+16 1172.98
+17 1104.52
+18 1050.01
+19 996.008
+20 942.856
+21 898.372
+22 853.864
+23 817.174
+24 780.34
+25 752.596
+26 724.862
+27 698.699
+28 675.552
+29 650.884
+30 626.8
+31 602.081
+32 590.392
+33 567.102
+34 551.566
+35 536.617
+36 522.303
+37 507.666
+38 493.765
+39 481.363
+40 470.241
+41 458.87
+42 444.846
+43 438.151
+44 427.472
+45 417.9
+46 408.286
+47 403.226
+48 392.777
+49 382.417
+50 377.987
+51 367.482
+52 361.871
+53 354.368
+54 347.278
+55 340.651
+56 338.111
+57 329.288
+58 324.38
+59 318.221
+60 314.678
+61 308.394
+62 303.414
+63 298.627
+64 295.313
+65 290.303
+66 283.899
+67 281.132
+68 278.477
+69 274.151
+70 267.179
+71 265.11
+72 263.405
+73 255.957
+74 253.882
+75 250.531
+76 246.185
+77 244.783
+78 241.267
+79 238.088
+80 235.754
+81 231.766
+82 229.297
+83 225.58
+84 223.921
+85 220.228
+86 217.509
+87 216.125
+88 214.174
+89 212.013
+90 208.975
+91 205.984
+92 203.97
+93 203.849
+94 201.349
+95 197.861
+96 196.269
+97 194.601
+98 190.937
+99 190.732
+100 188.865
+&
+@target G0.S4
+@type xy
+1 18366.3
+2 9238.63
+3 6169.21
+4 4588.53
+5 3708.76
+6 3063.13
+7 2650.15
+8 2330.25
+9 2062.94
+10 1867.04
+11 1707.53
+12 1553.04
+13 1424.21
+14 1332.84
+15 1237.09
+16 1149.04
+17 1089.82
+18 1033.8
+19 988.753
+20 923.895
+21 884.933
+22 851.928
+23 809.325
+24 768.168
+25 746.665
+26 717.675
+27 687.548
+28 660.673
+29 645.463
+30 618.143
+31 595.458
+32 585.43
+33 568.179
+34 540.315
+35 527.078
+36 510.062
+37 499.812
+38 487.482
+39 474.42
+40 462.155
+41 450.638
+42 441.183
+43 432.708
+44 422.237
+45 415.648
+46 407.651
+47 392.348
+48 391.995
+49 382.147
+50 374.922
+51 365.852
+52 355.288
+53 351.979
+54 345.055
+55 337.486
+56 333.076
+57 326.8
+58 314.846
+59 314.807
+60 308.567
+61 304.037
+62 296.098
+63 295.821
+64 292.736
+65 284.327
+66 286.386
+67 275.641
+68 274.978
+69 267.772
+70 269.107
+71 259.466
+72 259.375
+73 254.671
+74 249.659
+75 248.682
+76 241.302
+77 240.114
+78 237.787
+79 234.37
+80 231.288
+81 230.968
+82 226.836
+83 221.926
+84 222.314
+85 217.542
+86 217.354
+87 213.15
+88 211.885
+89 210.831
+90 205.6
+91 204.744
+92 201.213
+93 199.574
+94 194.699
+95 196.599
+96 193.716
+97 190.839
+98 188.811
+99 186.771
+100 185.594
+&
+@target G0.S5
+@type xy
+1 17863.2
+2 8937.22
+3 5951.02
+4 4397.7
+5 3597.19
+6 2994.56
+7 2561.1
+8 2238.53
+9 2017.64
+10 1804.68
+11 1639.7
+12 1501.36
+13 1380.06
+14 1284.98
+15 1192.47
+16 1118.7
+17 1052.56
+18 989.479
+19 957.784
+20 900.662
+21 852.306
+22 815.885
+23 785.63
+24 753.874
+25 713.31
+26 686.953
+27 668.684
+28 642.231
+29 617.747
+30 603.078
+31 576.974
+32 556.18
+33 543.848
+34 531.517
+35 509.719
+36 497.697
+37 486.65
+38 462.68
+39 461.296
+40 445.212
+41 436.957
+42 425.015
+43 419.047
+44 405.126
+45 400.386
+46 392.974
+47 382.059
+48 377.401
+49 363.272
+50 360.877
+51 353.554
+52 346.656
+53 340.647
+54 330.359
+55 327.875
+56 321.922
+57 313.603
+58 312.904
+59 306.305
+60 295.183
+61 296.834
+62 287.969
+63 286.774
+64 278.018
+65 276.999
+66 274.438
+67 264.007
+68 268.497
+69 260.505
+70 257.751
+71 252.101
+72 249.043
+73 245.077
+74 242.804
+75 236.313
+76 237.364
+77 234.477
+78 228.234
+79 225.094
+80 222.87
+81 220.658
+82 217.268
+83 216.15
+84 216.934
+85 209.323
+86 208.226
+87 205.392
+88 202.748
+89 202.955
+90 199.071
+91 197.754
+92 196.1
+93 191.866
+94 192.086
+95 186.169
+96 187.905
+97 183.686
+98 182.759
+99 181.442
+100 180.234
 &

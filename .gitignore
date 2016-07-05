@@ -1,3 +1,5 @@
 a.out
 *.dat
 *.dat~
+*.sh
+*.sh~

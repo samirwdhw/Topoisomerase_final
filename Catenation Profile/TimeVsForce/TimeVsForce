@@ -90,7 +90,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Jun 28 18:53:36 2016"
+@timestamp def "Sat Jul  2 14:10:13 2016"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -427,6 +427,153 @@
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "/home/samir/Documents/Projects/Topo_paper/TimeVsForce/timeVsForce_expo.dat"
 @    s2 legend  "Exponential"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 1.0
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 4
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsForce/time_force_ATP2000.dat"
+@    s3 legend  "Const (Profile 2)"
+@    s4 hidden false
+@    s4 type xy
+@    s4 symbol 0
+@    s4 symbol size 1.000000
+@    s4 symbol color 5
+@    s4 symbol pattern 1
+@    s4 symbol fill color 5
+@    s4 symbol fill pattern 0
+@    s4 symbol linewidth 1.0
+@    s4 symbol linestyle 1
+@    s4 symbol char 65
+@    s4 symbol char font 0
+@    s4 symbol skip 0
+@    s4 line type 1
+@    s4 line linestyle 1
+@    s4 line linewidth 1.0
+@    s4 line color 5
+@    s4 line pattern 1
+@    s4 baseline type 0
+@    s4 baseline off
+@    s4 dropline off
+@    s4 fill type 0
+@    s4 fill rule 0
+@    s4 fill color 1
+@    s4 fill pattern 1
+@    s4 avalue off
+@    s4 avalue type 2
+@    s4 avalue char size 1.000000
+@    s4 avalue font 0
+@    s4 avalue color 1
+@    s4 avalue rot 0
+@    s4 avalue format general
+@    s4 avalue prec 3
+@    s4 avalue prepend ""
+@    s4 avalue append ""
+@    s4 avalue offset 0.000000 , 0.000000
+@    s4 errorbar on
+@    s4 errorbar place both
+@    s4 errorbar color 5
+@    s4 errorbar pattern 1
+@    s4 errorbar size 1.000000
+@    s4 errorbar linewidth 1.0
+@    s4 errorbar linestyle 1
+@    s4 errorbar riser linewidth 1.0
+@    s4 errorbar riser linestyle 1
+@    s4 errorbar riser clip off
+@    s4 errorbar riser clip length 0.100000
+@    s4 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsForce/timeVsForce_linear.dat"
+@    s4 legend  "Linear (Profile 2)"
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 6
+@    s5 symbol pattern 1
+@    s5 symbol fill color 6
+@    s5 symbol fill pattern 0
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 0
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 1
+@    s5 line linewidth 1.0
+@    s5 line color 6
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 1
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 0
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 6
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment "/home/samir/Documents/Projects/Topo_paper/Catenation Profile/TimeVsForce/timeVsForce_expo.dat"
+@    s5 legend  "Expo (Profile 2)"
 @target G0.S0
 @type xy
 0 0
@@ -741,4 +888,319 @@
 196 2005.98
 198 2009.79
 200 2009.83
+&
+@target G0.S3
+@type xy
+0 0
+0 1519.81
+2 1520.22
+4 1535.32
+6 1549.43
+8 1561.77
+10 1563.49
+12 1575.22
+14 1582.15
+16 1588.91
+18 1597.29
+20 1607.82
+22 1624.61
+24 1621
+26 1637.78
+28 1634.9
+30 1652.83
+32 1652.29
+34 1664.67
+36 1664.49
+38 1677.48
+40 1686.06
+42 1689.13
+44 1699.46
+46 1712.01
+48 1707.77
+50 1716.18
+52 1726.75
+54 1727.04
+56 1742.25
+58 1750
+60 1752.49
+62 1768.8
+64 1767.03
+66 1772.01
+68 1772.55
+70 1791.68
+72 1788.14
+74 1791.91
+76 1807.11
+78 1811.22
+80 1831.18
+82 1825.39
+84 1825.73
+86 1834.1
+88 1845
+90 1847.05
+92 1852.87
+94 1879.13
+96 1871.39
+98 1887.3
+100 1887.39
+102 1883.75
+104 1893.65
+106 1893.23
+108 1909.26
+110 1901.19
+112 1921.01
+114 1916.36
+116 1919.52
+118 1936.08
+120 1947.55
+122 1936.21
+124 1958.41
+126 1967.46
+128 1961.68
+130 1980.88
+132 1982.66
+134 1994.61
+136 1997.05
+138 1997.95
+140 1998.44
+142 2021.48
+144 2020
+146 2002.06
+148 2018.88
+150 2030.21
+152 2032.15
+154 2036.2
+156 2042.36
+158 2045.5
+160 2057.37
+162 2060.1
+164 2083.03
+166 2075.33
+168 2079.62
+170 2084.9
+172 2095.97
+174 2087.9
+176 2107
+178 2113.38
+180 2119.47
+182 2122.03
+184 2121.26
+186 2135.68
+188 2149.52
+190 2143.62
+192 2144.82
+194 2159.16
+196 2146.41
+198 2166.54
+200 2172.79
+&
+@target G0.S4
+@type xy
+0 0
+0 1516.81
+2 1527.51
+4 1536.89
+6 1545.55
+8 1547.69
+10 1568.71
+12 1574.72
+14 1579.58
+16 1576.09
+18 1586.81
+20 1602.77
+22 1610.94
+24 1621.93
+26 1626.06
+28 1628.33
+30 1640.91
+32 1641.17
+34 1647.18
+36 1656.9
+38 1664.78
+40 1668.69
+42 1678.03
+44 1688.91
+46 1688.92
+48 1696.81
+50 1705.4
+52 1715.46
+54 1729.59
+56 1716.12
+58 1728.97
+60 1737.81
+62 1737.46
+64 1752.43
+66 1750.21
+68 1765.04
+70 1778.95
+72 1792.02
+74 1776.68
+76 1797.38
+78 1786.58
+80 1808.12
+82 1791.15
+84 1805.27
+86 1807.66
+88 1834.31
+90 1829.84
+92 1830.6
+94 1834.01
+96 1849.36
+98 1866.37
+100 1852.07
+102 1872.82
+104 1874.02
+106 1876.25
+108 1882.96
+110 1887.27
+112 1900.52
+114 1914.27
+116 1908.49
+118 1907.06
+120 1913.6
+122 1928.02
+124 1921.96
+126 1931.68
+128 1943.36
+130 1941.71
+132 1938.25
+134 1963.52
+136 1953.63
+138 1978.52
+140 1980.58
+142 1967.32
+144 1984.11
+146 1992.6
+148 2001.05
+150 1997.08
+152 2003.48
+154 2008.6
+156 2015.03
+158 2017.53
+160 2029.69
+162 2017.34
+164 2032.27
+166 2042.95
+168 2041.97
+170 2049.86
+172 2059.74
+174 2048.31
+176 2072.47
+178 2071.24
+180 2070.11
+182 2088.31
+184 2087.07
+186 2093.38
+188 2085.92
+190 2095.26
+192 2104.86
+194 2111.36
+196 2111.93
+198 2111.36
+200 2133.02
+&
+@target G0.S5
+@type xy
+0 0
+0 1516.81
+2 1527.48
+4 1536.82
+6 1543.62
+8 1547.37
+10 1566.06
+12 1567.98
+14 1574.66
+16 1570.52
+18 1579
+20 1593.53
+22 1601.39
+24 1607.43
+26 1606.23
+28 1614.94
+30 1623.71
+32 1625.95
+34 1624.83
+36 1638.88
+38 1643.46
+40 1650.47
+42 1649.43
+44 1658.97
+46 1659.12
+48 1671.76
+50 1679.73
+52 1684.04
+54 1686.92
+56 1684.94
+58 1695.07
+60 1702.88
+62 1700.83
+64 1704.81
+66 1711.5
+68 1725.27
+70 1735.79
+72 1736.63
+74 1746.93
+76 1735.52
+78 1749.64
+80 1748.51
+82 1751.29
+84 1747.75
+86 1761.61
+88 1771.41
+90 1773.68
+92 1768.1
+94 1780.33
+96 1780.38
+98 1786.69
+100 1802.28
+102 1798.11
+104 1813.06
+106 1807.7
+108 1816.06
+110 1820.03
+112 1824.65
+114 1829.02
+116 1840.75
+118 1843.4
+120 1836.92
+122 1843.61
+124 1856.75
+126 1842.69
+128 1848.77
+130 1863.47
+132 1867.84
+134 1859.13
+136 1874.86
+138 1873.64
+140 1881.71
+142 1898.86
+144 1889.79
+146 1888.91
+148 1912.59
+150 1900.51
+152 1913.67
+154 1908.48
+156 1915.26
+158 1914.61
+160 1925.39
+162 1924.17
+164 1916.68
+166 1925.21
+168 1936.49
+170 1938.35
+172 1944.12
+174 1946.6
+176 1958.34
+178 1951.92
+180 1955.83
+182 1963.55
+184 1962.05
+186 1971.15
+188 1979.51
+190 1978.29
+192 1985.2
+194 1979.69
+196 1982.99
+198 1995.29
+200 1997.15
 &
